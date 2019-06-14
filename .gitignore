@@ -3,3 +3,4 @@
 .\#.*
 \#.*\#
 /.eastwood
+/pom.xml*

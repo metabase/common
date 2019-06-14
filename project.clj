@@ -1,6 +1,6 @@
-(defproject metabase/common "1.0.0"
+(defproject metabase/common "1.0.0-SNAPSHOT"
   :description "Shared things used across several Metabase projects, such as i18n and config."
-  :url "https://github.com/metabase/mbql"
+  :url "https://github.com/metabase/common"
   :min-lein-version "2.5.0"
 
   :aliases
