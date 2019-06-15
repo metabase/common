@@ -25,22 +25,32 @@
 
   :profiles
   {:dev
-   {:dependencies [[org.clojure/clojure "1.10.0"]
-                   [expectations "2.2.0-beta2"]]
-    :injections   [(require 'expectations)
-                   ((resolve 'expectations/disable-run-on-shutdown))]
-    :jvm-opts     ["-Xverify:none"]}
+   {:dependencies
+    [[org.clojure/clojure "1.10.0"]
+     [expectations "2.2.0-beta2"]]
+
+    :injections
+    [(require 'expectations)
+     ((resolve 'expectations/disable-run-on-shutdown))]
+
+    :jvm-opts
+    ["-Xverify:none"]}
 
    :expectations
    {:plugins [[lein-expectations "0.0.8" :exclusions [expectations]]]}
 
    :eastwood
-   {:plugins         [[jonase/eastwood "0.3.5" :exclusions [org.clojure/clojure]]]
-    :add-linters     [:unused-private-vars
-                      :unused-namespaces
-                      :unused-fn-args
-                      :unused-locals]
-    :exclude-linters [:deprecations]}
+   {:plugins
+    [[jonase/eastwood "0.3.5" :exclusions [org.clojure/clojure]]]
+
+    :add-linters
+    [:unused-private-vars
+     :unused-namespaces
+     :unused-fn-args
+     :unused-locals]
+
+    :exclude-linters
+    [:deprecations]}
 
    :docstring-checker
    {:plugins
@@ -59,7 +69,8 @@
     :check-namespace-decls {:prefix-rewriting true}}
 
    :deploy-repositories
-   [["clojars" {:url           "https://clojars.org/repo"
-                :username      :env/clojars_username
-                :password      :env/clojars_password
-                :sign-releases false}]]})
+   [["clojars"
+     {:url           "https://clojars.org/repo"
+      :username      :env/clojars_username
+      :password      :env/clojars_password
+      :sign-releases false}]]})
