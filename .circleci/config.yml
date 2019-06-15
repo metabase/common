@@ -6,12 +6,12 @@ version: 2.1
 
 executors:
   default:
-    working_directory: /home/circleci/metabase/mbql/
+    working_directory: /home/circleci/metabase/common/
     docker:
       - image: circleci/clojure:lein-2.8.1
 
   java-11:
-    working_directory: /home/circleci/metabase/mbql/
+    working_directory: /home/circleci/metabase/common/
     docker:
       - image: circleci/clojure:openjdk-11-lein-2.8.1
 
@@ -52,7 +52,7 @@ jobs:
       - persist_to_workspace:
           root: /home/circleci/
           paths:
-            - metabase/mbql
+            - metabase/common
 
   be-deps:
     executor: default
