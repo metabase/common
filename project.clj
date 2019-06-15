@@ -3,6 +3,9 @@
   :url "https://github.com/metabase/common"
   :min-lein-version "2.5.0"
 
+  :license {:name "Eclipse Public License"
+            :url "https://raw.githubusercontent.com/metabase/common/master/LICENSE"}
+
   :aliases
   {"test"                      ["with-profile" "+expectations" "expectations"]
    "bikeshed"                  ["with-profile" "+bikeshed" "bikeshed" "--max-line-length" "120"]
