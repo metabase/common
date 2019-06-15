@@ -66,11 +66,11 @@
    :check-namespace-decls
    {:plugins               [[lein-check-namespace-decls "1.0.2"]]
     :source-paths          ["test"]
-    :check-namespace-decls {:prefix-rewriting true}}
+    :check-namespace-decls {:prefix-rewriting true}}}
 
-   :deploy-repositories
-   [["clojars"
-     {:url           "https://clojars.org/repo"
-      :username      :env/clojars_username
-      :password      :env/clojars_password
-      :sign-releases false}]]})
+  :deploy-repositories
+  [["clojars"
+    {:url           "https://clojars.org/repo"
+     :username      :env/clojars_username
+     :password      :env/clojars_password
+     :sign-releases false}]])

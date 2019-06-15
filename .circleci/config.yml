@@ -80,11 +80,13 @@ jobs:
           command: lein << parameters.lein-command >>
           no_output_timeout: 5m
 
-  upload-to-clojars:
+  deploy:
     executor: default
     steps:
       - attach-workspace
-      - run: lein deploy clojars
+      - run:
+          name: Deploy to clojars
+          command: lein deploy clojars
 
 
 ########################################################################################################################
@@ -138,7 +140,7 @@ workflows:
             - be-deps
           lein-command: bikeshed
 
-      - upload-to-clojars:
+      - deploy:
           requires:
             - be-linter-bikeshed
             - be-linter-docstring-checker
