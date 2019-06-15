@@ -1,4 +1,4 @@
-(defproject metabase/common "1.0.1-SNAPSHOT"
+(defproject metabase/common "1.0.1"
   :description "Shared things used across several Metabase projects, such as i18n and config."
   :url "https://github.com/metabase/common"
   :min-lein-version "2.5.0"
