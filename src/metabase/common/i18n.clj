@@ -1,7 +1,7 @@
 (ns metabase.common.i18n
   (:require [cheshire.generate :as json-gen]
             [clojure.tools.logging :as log]
-            [metabase.common.pretty :refer [PrettyPrintable]]
+            [pretty.core :refer [PrettyPrintable]]
             [puppetlabs.i18n.core :as i18n :refer [available-locales]])
   (:import java.util.Locale))
 
