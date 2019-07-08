@@ -1,4 +1,4 @@
-(defproject metabase/common "1.0.3"
+(defproject metabase/common "1.0.4"
   :description "Shared things used across several Metabase projects, such as i18n and config."
   :url "https://github.com/metabase/common"
   :min-lein-version "2.5.0"
@@ -17,7 +17,7 @@
    "lint"                      ["do" ["eastwood"] ["bikeshed"] ["check-namespace-decls"] ["docstring-checker"]]}
 
   :dependencies
-  [[org.clojure/tools.logging "0.4.1"]
+  [[org.clojure/tools.logging "0.5.0-alpha.1"]
    [camsaul/pretty "1.0.0"]
    [cheshire "5.8.1"]
    [environ "1.1.0"]
@@ -42,7 +42,7 @@
 
    :eastwood
    {:plugins
-    [[jonase/eastwood "0.3.5" :exclusions [org.clojure/clojure]]]
+    [[jonase/eastwood "0.3.6" :exclusions [org.clojure/clojure]]]
 
     :add-linters
     [:unused-private-vars
