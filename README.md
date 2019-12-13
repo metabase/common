@@ -5,3 +5,7 @@
 [![cljdoc badge](https://cljdoc.org/badge/metabase/common)](https://cljdoc.org/d/metabase/common/CURRENT)
 
 [![Clojars Project](https://clojars.org/metabase/common/latest-version.svg)](http://clojars.org/metabase/common)
+
+### Note
+
+This project is considered deprecated. The original intention was to create a shared utility library for various Metabase Clojure projects, such as `metabase/mbql`. In hindsight, I think it makes more sense to spin off `i18n` as a separate project and create other new libraries as appropriate.
