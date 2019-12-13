@@ -1,4 +1,4 @@
-(defproject metabase/common "1.0.5"
+(defproject metabase/common "1.0.6"
   :description "Shared things used across several Metabase projects, such as i18n and config."
   :url "https://github.com/metabase/common"
   :min-lein-version "2.5.0"
@@ -20,8 +20,6 @@
   [[org.clojure/tools.logging "0.5.0-alpha.1"]
    [camsaul/pretty "1.0.0"]
    [cheshire "5.8.1"]
-   [environ "1.1.0"]
-   [org.tcrawley/dynapath "1.0.0"]
    [puppetlabs/i18n "0.8.0"]]
 
   :profiles
